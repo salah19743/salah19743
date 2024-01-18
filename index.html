@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kriminalitetsrapport</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<div class="container">
+
+    <img id="top-left-image" src="C:\Users\sala0282\Downloads\Skærmbillede 2024-01-17 103355.png" alt="første Billede">
+    <body> 
+        <div class="popup-container" id="signupPopup">
+        <div class="popup">
+            <span class="close-popup" onclick="closeSignupPopup()">&times;</span>
+            <h1>Tilmeld dig</h1>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <label for="username">Brugernavn:</label>
+                <input type="text" id="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Kodeord:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Tilmeld dig</button>
+                <h3>(Dette er valgfrit)</h3>
+            </form>
+        </div>
+    </div></body>
+
+   <body>
+<div class="real-time-container">
+    <h1>Real-Time Data Opdateringer</h1>
+    <section class="real-time-section">
+        <h2>Nyeste kriminelle aktiviteter</h2>
+        <ul id="crimeList"></ul>
+    </section>
+    
+</div>
+
+<body>
+
+<img id="top-right-image" src="https://shop10981.sfstatic.io/upload_dir/shop/category/_thumbs/899-4.w1200.png" alt="First Image">
+
+<div class="container">
+    <h1>Politiets Kriminalitetsrapport</h1>
+ 
+    <form id="crimeForm">
+        <label for="location">Lokation:</label>
+        <input type="text" id="location" required>
+
+        <label for="crimeType">Type af kriminalitet:</label>
+        <input type="text" id="crimeType" required>           
+
+        <label for="crimeDescription">Beskrivelse:</label>
+        <textarea id="crimeDescription" required></textarea>
+        
+        <button type="button" onclick="submitCrimeReport()">Indsend Rapport</button>
+        
+    </form>
+
+    
+    <div class="contact-info">
+  
+        <section class="legal-resources-section">
+            <h2>Juridiske Ressourcer</h2>
+            <p>Her finder du nyttige juridiske ressourcer og information om dine rettigheder:</p>
+            <ul>
+                <li><a href="https://www.politi.dk/" target="_blank">Politiets officielle hjemmeside</a></li>
+                <li><a href="https://www.advokatsamfundet.dk/" target="_blank">Advokatrådet</a></li>
+                <li><a href="https://www.domstol.dk/" target="_blank">Domstolene i Danmark</a></li>
+            </ul>
+   
+        </section>
+        
+    </div>
+    <footer>
+            <div class="footer-section contact">
+                <h3>Kontaktinformation</h3>
+                <p>Telefon: 114</p>
+                <p>Email: sjyl@politi.dk</p>
+            </div>
+            <button onclick="printPage()">Print This Page</button>
+
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kriminalitetsrapport. Alle rettigheder forbeholdes. Lavet af Salah og Malte</p>
+        </div>
+    </footer>
+    </div>
+  
+</div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="your_script.js"></script>
+
+    
+
+    <div class="popup-container" id="popupContainer">
+        <div class="popup">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <p>Tak for din henvendelse. Politiet kigger på sagen så hurtigt som muligt.</p>
+        </div>
+    </div>
+  
+</body>
+</html>
